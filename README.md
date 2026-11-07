@@ -1,66 +1,41 @@
-# EmergencyConnect_3
-# EmergencyConnect – GitHub Pages Prototype
-
-EmergencyConnect is a South African emergency and disaster assistance prototype based on the Part 1 design. It provides weather information, emergency alerts, emergency service searches, emergency contacts, safety information, offline-information guidance and settings.
-
-## Part 2 prototype features
-
-- Responsive Home/Dashboard
-- Registration and Login user flow
-- Input validation and error messages
-- Weather REST API integration
-- Emergency alerts
-- Emergency contacts
-- Emergency service map links
-- Safety information
-- Offline information guidance
-- Settings stored in browser local storage
-- Dark mode
-- English/isiZulu preference placeholder
-- GitHub Pages compatible static front end
-
-## Important authentication note
-
-GitHub Pages is a static hosting service. The demonstration login in this prototype uses browser local storage so the UI can be tested without a server. **Do not use this local-storage password mechanism as a production authentication system.**
-
-For the final Part 2 requirement that data be stored in an online authentication service and that passwords be securely handled, connect the registration/login forms to **Firebase Authentication**. Firebase should manage passwords; the application should never store plain-text passwords in its own database.
-
-## REST API
-
-The weather prototype uses the Open-Meteo REST API from JavaScript. The application sends an HTTP request and processes JSON weather data before displaying it.
-
-## GitHub Pages
-
-1. Create a GitHub repository, for example `EmergencyConnect`.
-2. Upload `index.html`, `login.html`, `register.html`, `css/` and `js/`.
-3. Go to **Settings → Pages**.
-4. Select **Deploy from a branch**.
-5. Select the `main` branch and `/root`.
-6. Save and wait for GitHub Pages to publish.
-
-## Recommended Part 2 evidence
-
-Capture screenshots of:
-1. Home dashboard
-2. Registration validation
-3. Successful registration
-4. Login validation
-5. Successful login
-6. Weather REST API result
-7. Emergency alerts
-8. Emergency contacts
-9. Emergency service map links
-10. Safety information
-11. Settings
-12. GitHub repository
-13. GitHub Actions workflow
-14. Firebase Authentication users
-15. API/database data where applicable
-
-## Android/PoE alignment
-
-The original Part 1 proposal identified Android Studio, Kotlin, REST APIs/JSON, Room/SQLite, Google Maps SDK, Location Services and notifications. This website is a browser prototype for GitHub Pages; it should not be presented as replacing the required Android implementation where the rubric specifically requires an Android application.
+notifications. This website is a browser prototype for GitHub Pages; it should not be presented as replacing the required Android implementation where the rubric specifically requires an Android application.
 
 ## AI-use statement
 
 If AI assistance is used for code generation, debugging, documentation, design ideas or other development tasks, disclose those uses according to the institution's submission requirements. Keep the final statement within the required 500-word limit.
+<img width="998" height="665" alt="image" src="https://github.com/user-attachments/assets/fa963010-bbd9-4d80-a9ff-461e961e378f" />
+Important note about the included visuals and video
+The included screen images and animated MP4 are generated design previews, not recordings of the app running on a phone. They are included to illustrate the proposed appearance of EmergencyConnect. They must not be submitted as genuine evidence that the application features are working. The assignment requires a separate real demonstration recorded on a physical Android phone, with voice-over and evidence of online authentication, API and database data.
+The animated preview is supplied separately as: EmergencyConnect_Animated_Design_Preview.mp4. It is a conversion of the generated visual preview, not a live application demonstration.
+1. EmergencyConnect screen design preview
+The following generated visual is a concept mockup for the EmergencyConnect interface. Use it as a design reference only. Capture genuine screenshots from the installed application for final assessment evidence.
+ 
+2. Animated design preview
+A short animated preview has been prepared from the generated visual. The still frame below is included in this document; the MP4 file is provided separately.
+ 
+Separate preview file: EmergencyConnect_Animated_Design_Preview.mp4
+3. Features found in the supplied EmergencyConnect project
+The supplied source project is a basic native Android Kotlin application. Its current documented functionality includes:
+Current screen/feature	Current behaviour
+Home screen	Navigation to emergency reporting, volunteer registration, safety resources and About.
+Emergency report form	Collects name, phone, location/address, incident type, urgency and description; validates required fields and saves a demo entry locally.
+Volunteer registration	Collects contact details, area, skills and availability; validates key fields and saves a demo entry locally.
+Safety resources	Guidance for medical emergencies, fire, floods/severe weather, road accidents and emergency preparedness.
+About page	Explains the purpose and limitations of the demo app.
+112 dialler shortcut	Opens the phone dialler with 112 entered; the user chooses whether to place the call.
+4. Part 3 learning outcomes
+•	Use blob storage.
+•	Use a NoSQL database to store data.
+•	Use a NoSQL database to read data.
+•	Prepare an app for publication in the Google Play Store.
+5. Required application features
+Feature	What must be demonstrated
+Register and log in	Users must be able to register and log in. Passwords must be handled securely using encryption/secure authentication practices.
+Single sign-on (SSO)	Implement single sign-on (PoE requirement).
+Settings	Users must be able to change app settings.
+REST API and database	Connect to a REST API that you create and connect to a database, or use a suitable existing online API.
+Offline mode and synchronisation	Allow selected actions while offline and synchronise them after reconnection. RoomDB or SQLite may be used (PoE requirement).
+Push notifications	Implement real-time notifications and alerts (PoE requirement). Firebase Cloud Messaging is suggested in the brief.
+Two South African languages	Provide multi-language support for at least two South African languages (PoE requirement).
+Part 1 features	Keep and demonstrate the features required in Part 1. Check the rubric for weighting.
+App icon and image assets	Include the final app icon and image assets.
