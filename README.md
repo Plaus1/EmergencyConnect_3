@@ -39,3 +39,5 @@ Push notifications	Implement real-time notifications and alerts (PoE requirement
 Two South African languages	Provide multi-language support for at least two South African languages (PoE requirement).
 Part 1 features	Keep and demonstrate the features required in Part 1. Check the rubric for weighting.
 App icon and image assets	Include the final app icon and image assets.
+
+
